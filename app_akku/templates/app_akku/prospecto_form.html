@@ -1,0 +1,24 @@
+{% extends "app_akku/base.html" %}
+
+{% block contenido %}
+<div style="max-width: 700px; margin: 0 auto; padding: 40px; border: 1px solid #eee; border-radius: 12px; background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+    <h2 style="border-left: 6px solid #D12B2E; padding-left: 15px; color: #1a2a40; margin-bottom: 30px; text-transform: uppercase;">Nueva Consulta Estratégica</h2>
+    
+    <form style="display: flex; flex-direction: column; gap: 20px;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+            <input type="text" placeholder="Nombre" style="padding: 12px; border: 1px solid #ddd; border-radius: 6px; background: #f0f7ff;">
+            <input type="text" placeholder="Apellido" style="padding: 12px; border: 1px solid #ddd; border-radius: 6px; background: #f0f7ff;">
+        </div>
+        
+        <input type="email" placeholder="Email de contacto" style="padding: 12px; border: 1px solid #ddd; border-radius: 6px; background: #f0f7ff;">
+        
+        <input type="text" placeholder="Empresa / Proyecto" style="padding: 12px; border: 1px solid #ddd; border-radius: 6px; background: #f0f7ff;">
+        
+        <textarea placeholder="¿En qué podemos ayudarte? Cuéntanos sobre tus objetivos de Data o Growth..." rows="5" style="padding: 12px; border: 1px solid #ddd; border-radius: 6px; background: #f0f7ff; font-family: Arial, sans-serif;"></textarea>
+        
+        <button type="submit" class="btn-rojo" style="font-size: 1rem; padding: 15px;">ENVIAR CONSULTA</button>
+    </form>
+</div>
+{% endblock %}
+
+

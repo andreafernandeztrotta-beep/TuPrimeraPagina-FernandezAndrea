@@ -1,0 +1,19 @@
+{% extends "app_akku/base.html" %}
+
+{% block contenido %}
+<div style="text-align: center; padding: 60px 20px;">
+    <h1 style="font-size: 2.5rem; margin-bottom: 20px;">BIENVENIDA AL PANEL ESTRATÉGICO</h1>
+    <p style="font-size: 1.2rem; color: #666; max-width: 750px; margin: 0 auto 40px;">
+        Gestioná el crecimiento de tus clientes y analizá las consultas recibidas de forma científica y basada en datos.
+    </p>
+    
+    <div style="display: flex; justify-content: center; gap: 25px;">
+        <a href="{% url 'nueva_consulta' %}" class="btn-rojo" style="padding: 15px 35px;">INGRESAR COMO CLIENTE</a>
+        <a href="{% url 'buscar_prospecto' %}" style="padding: 15px 35px; border: 2px solid #1a2a40; color: #1a2a40; text-decoration: none; font-weight: bold; border-radius: 4px;">BUSCADOR DE SOLUCIONES</a>
+    </div>
+</div>
+{% endblock %}
+
+
+
+
